@@ -6,8 +6,15 @@
 <title>Jefferson Paque — Full-Stack Developer</title>
 <meta name="description" content="Jefferson Paque — Full-stack developer building APIs, web and mobile apps with Go, PHP (Laravel/Lumen), React and React Native.">
 <meta property="og:title" content="Jefferson Paque — Full-Stack Developer">
-<meta property="og:description" content="Go, PHP (Laravel/Lumen), REST APIs. Builder of PickleballRank PH and Sasari POS.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta property="og:description" content="Go, Laravel, React and React Native. Builder of the Pickleball App PH and Sasari POS.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://portfolio-7ju3.onrender.com/">
+<meta property="og:image" content="https://portfolio-7ju3.onrender.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#05060f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='.5' stop-color='%2322d3ee'/%3E%3Cstop offset='1' stop-color='%23f472b6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2305060f'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='26' fill='url(%23g)'%3EJP%3C/text%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -139,29 +146,21 @@ nav .logo{font-family:"Space Grotesk";font-weight:700;color:var(--text);backgrou
 .links a.live{background:var(--grad);border:none;color:#fff}
 .links a.live:hover{filter:brightness(1.15)}
 
-/* mock visuals */
-.visual{position:relative;border-radius:20px;border:1px solid var(--line);background:#0a0c1c;min-height:320px;overflow:hidden;transform:translateZ(40px)}
-.phone{position:absolute;width:170px;height:330px;border-radius:30px;border:6px solid #1c1f38;background:linear-gradient(180deg,#121531,#0a0c1c);left:50%;top:50%;transform:translate(-50%,-46%) rotate(-6deg);box-shadow:0 30px 60px -20px #000;padding:16px 12px;display:flex;flex-direction:column;gap:9px;animation:bob 6s ease-in-out infinite}
-@keyframes bob{50%{transform:translate(-50%,-50%) rotate(-3deg)}}
-.phone .t{font-family:"Space Grotesk";font-weight:700;font-size:.82rem}
-.phone .row{display:flex;justify-content:space-between;align-items:center;font-size:.66rem;padding:8px 9px;border-radius:10px;background:rgba(255,255,255,.05)}
-.phone .row b{color:var(--a4)}
-.phone .rank{display:flex;align-items:center;gap:7px}
-.phone .rank i{width:18px;height:18px;border-radius:50%;background:var(--grad)}
-.phone .qr{margin-top:auto;align-self:center;width:62px;height:62px;border-radius:8px;background:repeating-conic-gradient(#e9ecff 0 25%,#0a0c1c 0 50%) 0 0/12px 12px;opacity:.85}
+/* project screenshots */
+.visual{position:relative;border-radius:20px;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,rgba(124,92,255,.18),#0a0c1c 70%);min-height:420px;overflow:hidden;transform:translateZ(40px)}
+.phone{position:absolute;width:200px;height:400px;border-radius:32px;border:7px solid #1c1f38;background:#0a0c1c;left:50%;top:50%;transform:translate(-50%,-48%) rotate(-5deg);box-shadow:0 30px 60px -20px #000,0 0 0 1px rgba(255,255,255,.08);overflow:hidden;animation:bob 6s ease-in-out infinite}
+.phone img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+@keyframes bob{50%{transform:translate(-50%,-51%) rotate(-3deg)}}
+.visual-web{display:flex;align-items:center;justify-content:center;padding:26px;min-height:0}
+.browser{width:100%;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#fff;box-shadow:0 30px 60px -24px rgba(0,0,0,.8);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.proj:hover .browser{transform:translateY(-6px) scale(1.02)}
+.browser-bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#e9ebf3;border-bottom:1px solid #d7dae6}
+.browser-bar i{width:9px;height:9px;border-radius:50%;background:#c9ccd9}
+.browser-bar span{margin-left:10px;font-family:"JetBrains Mono";font-size:.68rem;color:#6b7090;background:#fff;border-radius:6px;padding:3px 10px;flex:1;max-width:240px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.browser img{display:block;width:100%;height:auto}
 .ball{position:absolute;width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#ecfccb,#a3e635 60%,#4d7c0f);box-shadow:0 0 30px rgba(163,230,53,.5);right:16%;top:16%;animation:bounce 2.4s cubic-bezier(.5,0,.5,1) infinite}
 .ball::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,#4d7c0f 2px,transparent 3px) 0 0/11px 11px;opacity:.5}
 @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(110px)}}
-.pos{position:absolute;inset:22px;display:grid;grid-template-columns:1.4fr 1fr;gap:12px}
-.pos .panel{border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:9px}
-.pos .h{font-family:"Space Grotesk";font-size:.8rem;color:var(--muted)}
-.pos .bars{display:flex;align-items:flex-end;gap:7px;height:110px;margin-top:auto}
-.pos .bars i{flex:1;border-radius:6px 6px 2px 2px;background:var(--grad);transform-origin:bottom;animation:grow 3s ease-in-out infinite alternate}
-.pos .bars i:nth-child(2){animation-delay:-.5s}.pos .bars i:nth-child(3){animation-delay:-1s}.pos .bars i:nth-child(4){animation-delay:-1.5s}.pos .bars i:nth-child(5){animation-delay:-2s}.pos .bars i:nth-child(6){animation-delay:-2.5s}
-@keyframes grow{from{transform:scaleY(.3)}to{transform:scaleY(1)}}
-.pos .item{display:flex;justify-content:space-between;font-size:.68rem;color:var(--muted);padding:6px 8px;border-radius:8px;background:rgba(255,255,255,.04)}
-.pos .total{margin-top:auto;font-family:"Space Grotesk";font-size:1.25rem;font-weight:700}
-.pos .total small{display:block;font-size:.62rem;color:var(--dim);font-weight:400}
 
 /* ---------- timeline ---------- */
 .timeline{position:relative;margin-top:56px;padding-left:34px}
@@ -219,7 +218,7 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
 @media (max-width:480px){
   .stats{grid-template-columns:repeat(3,1fr);gap:14px}
   .stat span{font-size:.72rem}
-  .visual{min-height:290px}
+  .visual{min-height:400px}.visual-web{min-height:0;padding:14px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -297,8 +296,8 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
       <div class="projects">
         <article class="proj tilt rv">
           <div>
-            <span class="tag">Live · Go + React Native</span>
-            <h3>PickleballRank PH</h3>
+            <span class="tag">Live beta · Go + React Native</span>
+            <h3>Pickleball App PH</h3>
             <p>A pickleball platform where players find matches, book courts, pay, check in, and climb the rankings — with as little manual coordination as possible.</p>
             <ul>
               <li>Match finder, court booking, QR check-in and automatic Elo ratings &amp; rankings</li>
@@ -309,15 +308,9 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
             <div class="chips"><span class="chip">Go</span><span class="chip">PostgreSQL</span><span class="chip">JWT</span><span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">TypeScript</span><span class="chip">PayMongo</span><span class="chip">Docker</span><span class="chip">Cloudflare R2</span></div>
             <div class="links"><a class="live" href="https://www.pickleballrankph.com/" target="_blank" rel="noopener">Visit live site ↗</a></div>
           </div>
-          <div class="visual" aria-hidden="true">
-            <div class="ball"></div>
-            <div class="phone">
-              <div class="t">Today's matches</div>
-              <div class="row">Doubles · 6:00 PM <b>2 slots</b></div>
-              <div class="row">Court 3 · ₱300/hr <b>Open</b></div>
-              <div class="row"><span class="rank"><i></i>#1 Rank</span><b>1,642</b></div>
-              <div class="qr"></div>
-            </div>
+          <div class="visual">
+            <div class="ball" aria-hidden="true"></div>
+            <div class="phone"><img src="pickleball.webp" alt="Pickleball app home screen" width="520" height="933" loading="lazy"></div>
           </div>
         </article>
 
@@ -334,19 +327,10 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
             </ul>
             <div class="chips"><span class="chip">Go</span><span class="chip">SQLite</span><span class="chip">REST</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Vite</span><span class="chip">Tailwind CSS</span></div>
           </div>
-          <div class="visual" aria-hidden="true">
-            <div class="pos">
-              <div class="panel">
-                <div class="h">Sales today · all stores</div>
-                <div class="bars"><i style="height:45%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:65%"></i><i style="height:80%"></i></div>
-              </div>
-              <div class="panel">
-                <div class="h">Cart</div>
-                <div class="item"><span>Rice 5kg</span><span>₱320</span></div>
-                <div class="item"><span>Eggs ×12</span><span>₱96</span></div>
-                <div class="item"><span>Soda 1.5L</span><span>₱75</span></div>
-                <div class="total"><small>Total</small>₱491.00</div>
-              </div>
+          <div class="visual visual-web">
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>sasari-pos · Point of Sale</span></div>
+              <img src="sasari.webp" alt="Sasari POS point-of-sale screen with items in the cart" width="1440" height="900" loading="lazy">
             </div>
           </div>
         </article>
