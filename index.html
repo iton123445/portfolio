@@ -20,7 +20,8 @@
   --radius:20px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:clip}
+.hero{overflow-x:clip}
 body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 ::selection{background:var(--a1);color:#fff}
@@ -276,7 +277,7 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
       <div>
         <div class="eyebrow rv">About me</div>
         <h2 class="rv d1">I build the parts<br>you <span class="grad">don't see</span> — and make them solid.</h2>
-        <p class="lead rv d2">Back-end developer from Iligan City, Philippines. I've built REST and SOAP APIs in Go and Laravel Lumen for gaming platforms, run WordPress and Shopify builds for clients, and shipped two full-stack products of my own: a pickleball booking platform with payments and a mobile app, and a multi-store POS system.</p>
+        <p class="lead rv d2">Back-end developer from Iligan City, Philippines. I've built REST and SOAP APIs in Go and Laravel Lumen for gaming platforms, troubleshot and extended WordPress sites with custom add-ons for agency clients, and shipped two full-stack products of my own: a pickleball booking platform with payments and a mobile app, and a multi-store POS system.</p>
         <p class="lead rv d3" style="margin-top:14px">I care about APIs that are reliable, tested, and documented well enough that the next developer smiles.</p>
       </div>
       <div class="terminal rv d2" aria-label="Code sample">
@@ -362,17 +363,19 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
         <div class="job rv">
           <div class="when">Oct 2026 — Present</div>
           <h3>Freelance Developer <span class="badge">On-call</span></h3>
-          <div class="at">Tugas Virtual Solutions · Iligan City</div>
-          <ul><li>Kept on as an on-call freelancer after the full-time role ended; WordPress and Shopify work as needed.</li></ul>
+          <div class="at">Tugas Virtual Solutions (Digital Agency) · Iligan City</div>
+          <ul><li>Kept on as an on-call freelancer after the full-time role ended; WordPress fixes, custom add-ons and Shopify updates for agency clients as needed.</li></ul>
         </div>
         <div class="job rv">
           <div class="when">Nov 2024 — Oct 2026</div>
           <h3>Junior Developer</h3>
-          <div class="at">Tugas Virtual Solutions · Full-time after OJT</div>
+          <div class="at">Tugas Virtual Solutions (Digital Agency) · Full-time after OJT</div>
           <ul>
             <li>Hired full-time after a 3-month OJT program based on performance.</li>
-            <li>Built and customized WordPress sites with Elementor and Divi.</li>
-            <li>Managed Shopify stores: themes, catalogs, payment gateways and design updates.</li>
+            <li>Supported multiple agency clients at once, owning technical issues across their WordPress and Shopify sites.</li>
+            <li>Diagnosed and resolved WordPress issues: plugin and theme conflicts, PHP errors, broken layouts and slow pages.</li>
+            <li>Built custom WordPress add-ons and features to client requirements using PHP, hooks and WordPress APIs.</li>
+            <li>Built sites with Elementor and Divi; maintained Shopify themes, catalogs and payment gateways.</li>
           </ul>
         </div>
         <div class="job rv">
@@ -411,7 +414,7 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
         <div class="sk rv d1"><h4><i>◧</i>Frontend &amp; Mobile</h4><p>React, TypeScript, React Native, Expo, Tailwind CSS, Vite, HTML, CSS, JavaScript, Liquid</p></div>
         <div class="sk rv d2"><h4><i>▤</i>Databases</h4><p>PostgreSQL, MySQL, SQLite, Firebase</p></div>
         <div class="sk rv"><h4><i>☁</i>DevOps &amp; Integrations</h4><p>Docker, Render, Cloudflare R2, Expo EAS, PayMongo, Git, GitHub</p></div>
-        <div class="sk rv d1"><h4><i>◎</i>CMS &amp; E-Commerce</h4><p>WordPress (Elementor, Divi), WooCommerce, Shopify</p></div>
+        <div class="sk rv d1"><h4><i>◎</i>CMS &amp; E-Commerce</h4><p>WordPress (custom plugins, troubleshooting, Elementor, Divi), WooCommerce, Shopify</p></div>
         <div class="sk rv d2"><h4><i>↗</i>SEO</h4><p>On-page SEO, content optimization, meta tags, internal linking, keyword research</p></div>
       </div>
     </div>
