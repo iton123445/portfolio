@@ -167,6 +167,15 @@ nav .logo{font-family:"Space Grotesk";font-weight:700;color:var(--text);backgrou
 .ball::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,#4d7c0f 2px,transparent 3px) 0 0/11px 11px;opacity:.5}
 @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(110px)}}
 
+/* pagespeed gauges */
+.visual-speed{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:30px 20px;min-height:0}
+.gauges{display:flex;gap:clamp(18px,4vw,36px);flex-wrap:wrap;justify-content:center}
+.gauge{display:flex;flex-direction:column;align-items:center;gap:12px;font-family:"JetBrains Mono",monospace;font-size:.8rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.dial{position:relative;width:clamp(120px,14vw,150px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#22c55e 0 93%,rgba(255,255,255,.08) 93% 100%);box-shadow:0 0 40px -8px rgba(34,197,94,.45)}
+.dial::before{content:"";position:absolute;inset:9px;border-radius:50%;background:#0a0c1c}
+.dial b{position:relative;font-family:"Space Grotesk",sans-serif;font-size:clamp(1.8rem,3.4vw,2.4rem);color:#4ade80;letter-spacing:-.02em}
+.gauge-note{color:var(--dim);font-size:.85rem;text-align:center}
+
 /* ---------- timeline ---------- */
 .timeline{position:relative;margin-top:56px;padding-left:34px}
 .timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
@@ -266,11 +275,12 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
     <p class="role">&gt; <b id="typed"></b><span class="caret"></span></p>
     <div class="cta">
       <a class="btn primary magnetic" href="#work">See my work ↓</a>
+      <a class="btn ghost magnetic" href="https://drive.google.com/file/d/1hpKYFsgvIDu9qXc-vhLyO4o7pDMqFVvD/view" target="_blank" rel="noopener">Download CV ↗</a>
     </div>
     <div class="stats">
       <div class="stat"><strong data-count="4" data-suffix="+">0</strong><span>years in tech</span></div>
-      <div class="stat"><strong data-count="2">0</strong><span>products shipped</span></div>
-      <div class="stat"><strong data-count="2">0</strong><span>companies</span></div>
+      <div class="stat"><strong data-count="20" data-suffix="+">0</strong><span>client sites</span></div>
+      <div class="stat"><strong data-count="90" data-suffix="+">0</strong><span>PageSpeed scores</span></div>
     </div>
   </div>
   <div class="scroll-hint" aria-hidden="true"></div>
@@ -281,7 +291,7 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
     <div class="wrap">
       <div class="eyebrow rv">Selected work</div>
       <h2 class="rv d1">Things I've <span class="grad">built &amp; shipped</span></h2>
-      <p class="lead rv d2">Personal products, designed and built end to end — backend, frontend, mobile and deployment.</p>
+      <p class="lead rv d2">Two years of client sites at a digital agency, plus products I designed and built end to end — backend, frontend, mobile and deployment.</p>
 
       <div class="projects">
         <article class="proj tilt rv">
@@ -322,6 +332,28 @@ footer .wrap{display:flex;justify-content:center;text-align:center}
               <div class="browser-bar"><i></i><i></i><i></i><span>sasari-pos · Point of Sale</span></div>
               <img src="sasari.webp" alt="Sasari POS point-of-sale screen with items in the cart" width="1440" height="900" loading="lazy">
             </div>
+          </div>
+        </article>
+
+        <article class="proj tilt rv">
+          <div>
+            <span class="tag">Agency work · 2 years · 20+ client sites</span>
+            <h3>WordPress &amp; Shopify Client Sites</h3>
+            <p>At Tugas Virtual Solutions I looked after the technical side of 20+ client websites at once — keeping them fast, stable and doing what each business needed.</p>
+            <ul>
+              <li>Speed optimization that brought client sites into Google PageSpeed's green zone (90+) on mobile and desktop</li>
+              <li>Diagnosed plugin and theme conflicts, PHP errors and broken layouts on live sites</li>
+              <li>Built custom WordPress add-ons with PHP, hooks and WordPress APIs when no plugin fit</li>
+              <li>Built pages in Elementor and Divi; maintained Shopify themes, catalogs and payment gateways</li>
+            </ul>
+            <div class="chips"><span class="chip">WordPress</span><span class="chip">PHP</span><span class="chip">Elementor</span><span class="chip">Divi</span><span class="chip">WooCommerce</span><span class="chip">Shopify</span><span class="chip">Liquid</span><span class="chip">Core Web Vitals</span></div>
+          </div>
+          <div class="visual visual-speed" aria-label="Google PageSpeed scores of 90 and above on mobile and desktop">
+            <div class="gauges">
+              <div class="gauge"><div class="dial"><b>90+</b></div><span>Mobile</span></div>
+              <div class="gauge"><div class="dial"><b>90+</b></div><span>Desktop</span></div>
+            </div>
+            <p class="gauge-note">Google PageSpeed targets reached on client sites</p>
           </div>
         </article>
       </div>
